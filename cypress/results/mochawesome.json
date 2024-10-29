@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-10-24T23:39:07.974Z",
+    "end": "2024-10-24T23:39:12.591Z",
+    "duration": 4617,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fb9af138-0a08-4b6c-bf71-a4d9d0aaace9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\index.spec.cy.ts",
+      "file": "cypress\\e2e\\index.spec.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "53a9162b-e1a0-4acb-acd3-e93e8cd35c4a",
+          "title": "Calculator Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should have the title \"Calculator App\"",
+              "fullTitle": "Calculator Tests should have the title \"Calculator App\"",
+              "timedOut": null,
+              "duration": 526,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('title').should('have.text', 'Calculator App');",
+              "err": {},
+              "uuid": "4acec8eb-4e9f-40a0-aa5e-65c83facc767",
+              "parentUUID": "53a9162b-e1a0-4acb-acd3-e93e8cd35c4a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should display 2 when \"1 + 1 = \" is clicked",
+              "fullTitle": "Calculator Tests should display 2 when \"1 + 1 = \" is clicked",
+              "timedOut": null,
+              "duration": 2525,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.key-1').click();\ncy.get('.key-add').click();\ncy.get('.key-1').click();\ncy.get('.key-equals').click();\ncy.get('.calculator-display').should('have.text', '2');",
+              "err": {},
+              "uuid": "0b2e0af1-9692-49e9-b6de-2583167e434b",
+              "parentUUID": "53a9162b-e1a0-4acb-acd3-e93e8cd35c4a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4acec8eb-4e9f-40a0-aa5e-65c83facc767",
+            "0b2e0af1-9692-49e9-b6de-2583167e434b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3051,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": true,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

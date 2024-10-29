@@ -1,0 +1,10 @@
+{
+  "tests": [
+    {
+      "score": 20,
+      "name": "End-toEnd Tests",
+      "output": "New tests added: 2/10",
+      "status": "passed"
+    }
+  ]
+}
